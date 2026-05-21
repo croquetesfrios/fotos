@@ -136,7 +136,7 @@ footer {
 /* Imagem principal */
 #viewerImg {
   /* Dimensões absolutas, sem depender do pai */
-  max-width: calc(100vw - 120px);
+  max-width: calc(100vw - 50px);
   max-height: calc(100vh - 110px);
   width: auto;
   height: auto;
