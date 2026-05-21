@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -128,7 +133,8 @@ footer {
   flex-direction: column;
   align-items: center;
   /* width explícita para o max-width do img funcionar */
-  width: calc(100vw - 120px);
+  width: 100%;
+  max-width: 100%;
   max-height: 100vh;
   padding: 60px 0 40px;
 }
@@ -136,7 +142,7 @@ footer {
 /* Imagem principal */
 #viewerImg {
   /* Dimensões absolutas, sem depender do pai */
-  max-width: calc(100vw - 50px);
+  max-width: 100%;
   max-height: calc(100vh - 110px);
   width: auto;
   height: auto;
