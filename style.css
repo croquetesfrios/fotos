@@ -233,12 +233,20 @@ footer {
 /* ── Responsivo mobile ─────────────────────────────────── */
 @media (max-width: 600px) {
   .viewer-inner {
-    max-width: 100vw;
-    padding: 52px 16px 36px;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    justify-content: center;
   }
 
   #viewerImg {
-    max-height: calc(100vh - 100px);
+    max-width: 100vw;
+    max-height: 92vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
   }
 
   .viewer-nav {
@@ -264,10 +272,15 @@ footer {
     justify-content: flex-end;
   }
 
-  .viewer-meta {
-    padding: 0 4px;
-    margin-top: 10px;
+   .viewer-meta {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+
+    padding: 0 14px;
   }
+
 
   .viewer-title { font-size: 0.72rem; }
   .viewer-counter { font-size: 0.70rem; }
