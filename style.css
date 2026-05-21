@@ -2,15 +2,6 @@
   box-sizing: border-box;
 }
 
-* {
-  outline: 1px solid red;
-}
-
-html, body {
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -38,8 +29,6 @@ main {
 }
 
 footer {
-  width: 100%;
-  overflow-x: hidden;
   text-align: center;
   padding: 10px;
   color: rgb(0, 0, 0);
@@ -100,7 +89,7 @@ footer {
 
 @media (max-width: 600px) {
   main { width: 95%; margin: auto; padding-top: 12px;}
-  .gallery { width: 100%; overflow: hidden; column-count: 2; column-gap: 10px;}
+  .gallery { column-count: 2; column-gap: 10px;}
   .item { margin-bottom: 10px; }
 }
 
@@ -139,8 +128,7 @@ footer {
   flex-direction: column;
   align-items: center;
   /* width explícita para o max-width do img funcionar */
-  width: 100%;
-  max-width: 100%;
+  width: calc(100vw - 120px);
   max-height: 100vh;
   padding: 60px 0 40px;
 }
@@ -148,7 +136,7 @@ footer {
 /* Imagem principal */
 #viewerImg {
   /* Dimensões absolutas, sem depender do pai */
-  max-width: 100%;
+  max-width: calc(100vw - 120px);
   max-height: calc(100vh - 110px);
   width: auto;
   height: auto;
@@ -245,8 +233,7 @@ footer {
 /* ── Responsivo mobile ─────────────────────────────────── */
 @media (max-width: 600px) {
   .viewer-inner {
-    width: 100%;
-  max-width: 100%;
+    max-width: 100vw;
     padding: 52px 12px 36px;
   }
 
@@ -262,19 +249,18 @@ footer {
     transform: none;
     padding: 16px 24px;
     min-height: 56px;
-    box-sizing: border-box;
 
   }
 
   .viewer-prev {
     left: 0;
-    right: auto;
+    right: 50%;
     justify-content: flex-start;
   }
 
   .viewer-next {
     right: 0;
-    left: auto;
+    left: 50%;
     justify-content: flex-end;
   }
 
