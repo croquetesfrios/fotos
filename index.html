@@ -22,11 +22,18 @@
   </button>
 
   <div id="viewerInner" class="viewer-inner">
-    <img id="viewerImg" src="" alt="" draggable="false">
+    
+    <div class="viewer-track" id="viewerTrack">
+      <img class="viewer-slide" id="prevImg" src="" draggable="false">
+      <img class="viewer-slide" id="currentImg" src="" draggable="false">
+      <img class="viewer-slide" id="nextImg" src="" draggable="false">
+    </div>
+    
     <div class="viewer-meta">
       <span id="viewerTitle" class="viewer-title"></span>
       <span id="viewerCounter" class="viewer-counter"></span>
     </div>
+    
   </div>
 
   <button class="viewer-nav viewer-next" id="viewerNext" aria-label="Próxima imagem">
