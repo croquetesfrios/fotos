@@ -124,6 +124,8 @@ footer {
 
 /* Área central que contém imagem + meta */
 .viewer-inner {
+  overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,6 +133,27 @@ footer {
   width: calc(100vw - 120px);
   max-height: 100vh;
   padding: 60px 0 40px;
+}
+
+.viewer-track {
+  display: flex;
+  width: 300%;
+  transform: translateX(-100%);
+  touch-action: pan-y;
+
+  will-change: transform;
+}
+
+.viewer-slide {
+  width: 100%;
+  flex-shrink: 0;
+
+  max-height: calc(100vh - 110px);
+
+  object-fit: contain;
+
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 /* Imagem principal */
