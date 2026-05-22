@@ -370,18 +370,60 @@ function closeViewer() {
 
 function navigate(dir) {
   if (isAnimating) return;
+
   isAnimating = true;
 
-  viewerImg.classList.add("fade-out");
+  const slideClass =
+    dir > 0
+      ? "viewer-slide-left"
+      : "viewer-slide-right";
+
+  // anima saída
+  viewerImg.classList.add(slideClass);
 
   setTimeout(() => {
-    currentIndex = (currentIndex + dir + shuffledImages.length) % shuffledImages.length;
+
+    currentIndex =
+      (currentIndex + dir + shuffledImages.length) %
+      shuffledImages.length;
+
+    // troca imagem enquanto invisível
     viewerImg.src = shuffledImages[currentIndex].full;
-    viewerTitle.textContent = shuffledImages[currentIndex].title;
+    viewerTitle.textContent =
+      shuffledImages[currentIndex].title;
+
     updateCounter();
-    viewerImg.classList.remove("fade-out");
-    isAnimating = false;
-  }, 200);
+
+    // coloca nova imagem do lado oposto SEM animação
+    viewerImg.style.transition = "none";
+
+    viewerImg.style.transform =
+      dir > 0
+        ? "translateX(80px)"
+        : "translateX(-80px)";
+
+    viewerImg.style.opacity = "0";
+
+    // força reflow
+    void viewerImg.offsetWidth;
+
+    // reativa animação
+    viewerImg.style.transition =
+      "transform 0.32s ease, opacity 0.32s ease";
+
+    // anima entrada natural
+    requestAnimationFrame(() => {
+      viewerImg.style.transform = "translateX(0)";
+      viewerImg.style.opacity = "1";
+    });
+
+    viewerImg.classList.remove(slideClass);
+
+    setTimeout(() => {
+      isAnimating = false;
+    }, 320);
+
+  }, 320);
 }
 
 function updateCounter() {
