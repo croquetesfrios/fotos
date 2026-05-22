@@ -3,7 +3,7 @@
 }
 
 * {
-  outline: 1px solid blue;
+  outline: 1px solid pink;
 }
 
 body {
@@ -243,6 +243,7 @@ footer {
 
   #viewerImg {
     max-height: calc(100vh - 100px);
+    max-width: calc(100vw - 100px);
   }
 
   .viewer-nav {
