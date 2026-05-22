@@ -239,6 +239,7 @@ footer {
   }
   .viewer-slide {
     max-height: calc(100vh - 100px);
+    max-width: calc(100vw - 100px);
   }
   .viewer-nav {
     position: fixed;
