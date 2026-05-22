@@ -3,7 +3,7 @@
 }
 
 * {
-  outline: 1px solid green;
+  outline: 1px solid blue;
 }
 
 body {
@@ -238,7 +238,7 @@ footer {
 @media (max-width: 600px) {
   .viewer-inner {
     max-width: 100vw;
-    padding: 52px 8px 36px;
+    padding: 52px 0px 36px;
   }
 
   #viewerImg {
