@@ -127,29 +127,33 @@ footer {
 /* Área central que contém imagem + meta */
 .viewer-inner {
   width: 100%;
-  max-width: 100vw;
-  overflow: hidden;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:
-    env(safe-area-inset-top)
-    0
-    env(safe-area-inset-bottom);
+  justify-content: center;
+  overflow: hidden;
+  padding: 60px 0 40px;
+}
+
+.viewer-stage {
+  width: 100%;
+  height: calc(100vh - 140px);
+  overflow: hidden;
+  position: relative;
 }
 
 .viewer-track {
   display: flex;
   width: 300%;
-  height: calc(100vh - 140px);
-  align-items: center;
-  transform: translateX(-100%);
+  height: 100%;
+  transform: translateX(-33.3333%);
   will-change: transform;
   touch-action: pan-y;
 }
 
 .viewer-slide {
-  width: calc(100% / 3);
+  width: 33.3333%;
   height: 100%;
   flex-shrink: 0;
   object-fit: contain;
