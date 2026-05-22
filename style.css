@@ -146,7 +146,7 @@ footer {
 .viewer-track {
   display: flex;
   width: 300%;
-  height: 100%;
+  height: 90%;
   transform: translateX(-33.3333%);
   will-change: transform;
   touch-action: pan-y;
