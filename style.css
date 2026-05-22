@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+* {
+  border: red solid 1px;
+}
 
 body {
   margin: 0;
@@ -110,7 +113,6 @@ footer {
   align-items: center;
   justify-content: center;
   z-index: 9999;
-
   /* Estado inicial: invisível e não interactivo */
   opacity: 0;
   pointer-events: none;
@@ -129,8 +131,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width explícita para o max-width do img funcionar */
-  width: calc(100vw - 120px);
+  width: min(92vw, 1400px);
   max-height: 100vh;
   padding: 60px 0 40px;
 }
@@ -139,56 +140,18 @@ footer {
   display: flex;
   width: 300%;
   transform: translateX(-100%);
-  touch-action: pan-y;
-
   will-change: transform;
+  touch-action: pan-y;
 }
 
 .viewer-slide {
   width: 100%;
   flex-shrink: 0;
-
   max-height: calc(100vh - 110px);
-
   object-fit: contain;
-
   user-select: none;
   -webkit-user-drag: none;
-}
-
-/* Imagem principal */
-#viewerImg {
-  /* Dimensões absolutas, sem depender do pai */
-  max-width: calc(100vw - 120px);
-  max-height: calc(100vh - 110px);
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  user-select: none;
-  -webkit-user-drag: none;
-
-  /* Transição de fade na navegação */
-  opacity: 1;
-  transition: opacity 0.2s ease;
-}
-
-#viewerImg {
-  transition:
-    transform 0.32s ease,
-    opacity 0.32s ease;
-}
-
-/* sair para esquerda */
-.viewer-slide-left {
-  transform: translateX(-80px);
-  opacity: 0;
-}
-
-/* sair para direita */
-.viewer-slide-right {
-  transform: translateX(80px);
-  opacity: 0;
+  pointer-events: none;
 }
 
 /* Rodapé: título + contador */
@@ -269,44 +232,40 @@ footer {
 
 /* ── Responsivo mobile ─────────────────────────────────── */
 @media (max-width: 600px) {
+
   .viewer-inner {
-    max-width: 100vw;
-    padding: 52px 12px 36px;
+    width: 100%;
+    padding: 52px 8px 36px;
   }
-
-  #viewerImg {
+  .viewer-slide {
     max-height: calc(100vh - 100px);
-    max-width: calc(100vw - 40px);
   }
-
   .viewer-nav {
-    /* No mobile as setas ficam em baixo, lado a lado */
     position: fixed;
     top: auto;
     bottom: 0;
     transform: none;
+    width: 50%;
     padding: 16px 24px;
     min-height: 56px;
-
+    box-sizing: border-box;
   }
-
   .viewer-prev {
     left: 0;
-    right: 50%;
     justify-content: flex-start;
   }
-
   .viewer-next {
     right: 0;
-    left: 50%;
     justify-content: flex-end;
   }
-
   .viewer-meta {
     padding: 0 4px;
     margin-top: 10px;
   }
-
-  .viewer-title { font-size: 0.72rem; }
-  .viewer-counter { font-size: 0.70rem; }
+  .viewer-title {
+    font-size: 0.72rem;
+  }
+  .viewer-counter {
+    font-size: 0.70rem;
+  }
 }
