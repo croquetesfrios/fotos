@@ -253,7 +253,7 @@ footer {
 
   #viewerImg {
     max-height: calc(100vh - 100px);
-    max-width: calc(100vw - 80px);
+    max-width: calc(100vw - 40px);
   }
 
   .viewer-nav {
