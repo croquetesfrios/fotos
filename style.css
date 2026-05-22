@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 * {
-  border: blue solid 1px;
+  outline: red solid 1px;
 }
 
 body {
@@ -146,8 +146,8 @@ footer {
 }
 
 .viewer-slide {
+  width: calc(100% / 3);
   flex-shrink: 0;
-  width: 100vw;
   height: calc(100vh - 140px);
   object-fit: contain;
   user-select: none;
@@ -239,7 +239,7 @@ footer {
     padding: 80px 16px;
   }
    .viewer-slide {
-    width: 100vw;
+    width: calc(100% / 3);
     height:
       calc(100vh - 120px);
     padding: 0px 8px;
