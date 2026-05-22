@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 * {
-  border: red solid 1px;
+  border: green solid 1px;
 }
 
 body {
@@ -235,7 +235,7 @@ footer {
 
   .viewer-inner {
     width: 100%;
-    padding: 52px 8px 36px;
+    padding: 52px 16px 36px;
   }
   .viewer-slide {
     max-height: calc(100vh - 100px);
