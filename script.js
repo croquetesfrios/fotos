@@ -305,163 +305,395 @@ const images = [
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
+
+    [array[i], array[j]] =
+      [array[j], array[i]];
   }
+
   return array;
 }
 
 const gallery = document.getElementById("gallery");
-const shuffledImages = shuffle([...images]);
 
-// ── Galeria ───────────────────────────────────────────────
+const shuffledImages =
+  shuffle([...images]);
+
+
+// ── Galeria ─────────────────────────────────────────────
 shuffledImages.forEach((item, index) => {
+
   const div = document.createElement("div");
+
   div.classList.add("item");
-  div.dataset.category = item.thumb.split('/')[1];
+
+  div.dataset.category =
+    item.thumb.split('/')[1];
 
   const img = document.createElement("img");
+
   img.src = item.thumb;
   img.loading = "lazy";
   img.alt = item.title;
 
-  img.addEventListener("click", () => openViewer(index));
+  img.addEventListener("click", () =>
+    openViewer(index)
+  );
 
-  const overlay = document.createElement("div");
+  const overlay =
+    document.createElement("div");
+
   overlay.classList.add("overlay");
+
   overlay.textContent = item.title;
 
   div.appendChild(img);
   div.appendChild(overlay);
+
   gallery.appendChild(div);
+
 });
 
-// ── Viewer ────────────────────────────────────────────────
-const viewer     = document.getElementById("viewer");
-const viewerImg  = document.getElementById("viewerImg");
-const viewerTitle= document.getElementById("viewerTitle");
-const viewerCounter = document.getElementById("viewerCounter");
+
+// ── Viewer ──────────────────────────────────────────────
+const viewer =
+  document.getElementById("viewer");
+
+const track =
+  document.getElementById("viewerTrack");
+
+const prevImg =
+  document.getElementById("prevImg");
+
+const currentImg =
+  document.getElementById("currentImg");
+
+const nextImg =
+  document.getElementById("nextImg");
+
+const viewerTitle =
+  document.getElementById("viewerTitle");
+
+const viewerCounter =
+  document.getElementById("viewerCounter");
+
 let currentIndex = 0;
-let isAnimating  = false;
 
-viewerImg.onerror = () => {
-  console.error("Erro ao carregar:", viewerImg.src);
-};  
+let isAnimating = false;
 
+
+// ── Atualiza imagens do carousel ───────────────────────
+function updateViewer() {
+
+  const prevIndex =
+    (currentIndex - 1 + shuffledImages.length) %
+    shuffledImages.length;
+
+  const nextIndex =
+    (currentIndex + 1) %
+    shuffledImages.length;
+
+  prevImg.src =
+    shuffledImages[prevIndex].full;
+
+  currentImg.src =
+    shuffledImages[currentIndex].full;
+
+  nextImg.src =
+    shuffledImages[nextIndex].full;
+
+  viewerTitle.textContent =
+    shuffledImages[currentIndex].title;
+
+  updateCounter();
+}
+
+
+// ── Abrir viewer ───────────────────────────────────────
 function openViewer(index) {
+
   currentIndex = index;
 
- console.log(shuffledImages[index].full);
+  updateViewer();
 
-  viewerImg.src = shuffledImages[index].full;
-  viewerTitle.textContent = shuffledImages[index].title;
-  updateCounter();
+  track.style.transition = "none";
+
+  track.style.transform =
+    "translateX(-100%)";
+
   viewer.classList.add("active");
-  viewer.setAttribute("aria-hidden", "false");
-  document.body.style.overflow = "hidden";
+
+  viewer.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+  document.body.style.overflow =
+    "hidden";
 }
 
+
+// ── Fechar viewer ──────────────────────────────────────
 function closeViewer() {
+
   viewer.classList.remove("active");
-  viewer.setAttribute("aria-hidden", "true");
+
+  viewer.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
   document.body.style.overflow = "";
-  // Clear src after fade-out to free memory
-  setTimeout(() => { viewerImg.src = ""; }, 350);
+
+  setTimeout(() => {
+
+    prevImg.src = "";
+    currentImg.src = "";
+    nextImg.src = "";
+
+  }, 300);
 }
 
+
+// ── Navegação ──────────────────────────────────────────
 function navigate(dir) {
+
   if (isAnimating) return;
 
   isAnimating = true;
 
-  const slideClass =
-    dir > 0
-      ? "viewer-slide-left"
-      : "viewer-slide-right";
+  track.style.transition =
+    "transform 0.28s ease";
 
-  // anima saída
-  viewerImg.classList.add(slideClass);
+  // Próxima
+  if (dir > 0) {
 
-  setTimeout(() => {
-
-    currentIndex =
-      (currentIndex + dir + shuffledImages.length) %
-      shuffledImages.length;
-
-    // troca imagem enquanto invisível
-    viewerImg.src = shuffledImages[currentIndex].full;
-    viewerTitle.textContent =
-      shuffledImages[currentIndex].title;
-
-    updateCounter();
-
-    // coloca nova imagem do lado oposto SEM animação
-    viewerImg.style.transition = "none";
-
-    viewerImg.style.transform =
-      dir > 0
-        ? "translateX(80px)"
-        : "translateX(-80px)";
-
-    viewerImg.style.opacity = "0";
-
-    // força reflow
-    void viewerImg.offsetWidth;
-
-    // reativa animação
-    viewerImg.style.transition =
-      "transform 0.32s ease, opacity 0.32s ease";
-
-    // anima entrada natural
-    requestAnimationFrame(() => {
-      viewerImg.style.transform = "translateX(0)";
-      viewerImg.style.opacity = "1";
-    });
-
-    viewerImg.classList.remove(slideClass);
+    track.style.transform =
+      "translateX(-200%)";
 
     setTimeout(() => {
+
+      currentIndex =
+        (currentIndex + 1) %
+        shuffledImages.length;
+
+      updateViewer();
+
+      track.style.transition =
+        "none";
+
+      track.style.transform =
+        "translateX(-100%)";
+
       isAnimating = false;
-    }, 320);
 
-  }, 320);
+    }, 280);
+
+  }
+
+  // Anterior
+  else {
+
+    track.style.transform =
+      "translateX(0%)";
+
+    setTimeout(() => {
+
+      currentIndex =
+        (currentIndex - 1 + shuffledImages.length) %
+        shuffledImages.length;
+
+      updateViewer();
+
+      track.style.transition =
+        "none";
+
+      track.style.transform =
+        "translateX(-100%)";
+
+      isAnimating = false;
+
+    }, 280);
+
+  }
 }
 
+
+// ── Contador ───────────────────────────────────────────
 function updateCounter() {
-  viewerCounter.textContent = `${currentIndex + 1} / ${shuffledImages.length}`;
+
+  viewerCounter.textContent =
+    `${currentIndex + 1} / ${shuffledImages.length}`;
+
 }
 
-// Botões
-document.getElementById("viewerClose").addEventListener("click", closeViewer);
-document.getElementById("viewerPrev").addEventListener("click", () => navigate(-1));
-document.getElementById("viewerNext").addEventListener("click", () => navigate(1));
 
-// Fechar ao clicar no fundo
+// ── Botões ─────────────────────────────────────────────
+document
+  .getElementById("viewerClose")
+  .addEventListener(
+    "click",
+    closeViewer
+  );
+
+document
+  .getElementById("viewerPrev")
+  .addEventListener(
+    "click",
+    () => navigate(-1)
+  );
+
+document
+  .getElementById("viewerNext")
+  .addEventListener(
+    "click",
+    () => navigate(1)
+  );
+
+
+// ── Fechar ao clicar no fundo ──────────────────────────
 viewer.addEventListener("click", (e) => {
-  if (e.target === viewer || e.target === document.getElementById("viewerInner")) closeViewer();
+
+  if (
+    e.target === viewer ||
+    e.target ===
+      document.getElementById("viewerInner")
+  ) {
+
+    closeViewer();
+
+  }
+
 });
 
-// Teclado
+
+// ── Teclado ────────────────────────────────────────────
 document.addEventListener("keydown", (e) => {
-  if (!viewer.classList.contains("active")) return;
-  if (e.key === "Escape")      closeViewer();
-  if (e.key === "ArrowRight")  navigate(1);
-  if (e.key === "ArrowLeft")   navigate(-1);
+
+  if (
+    !viewer.classList.contains("active")
+  ) return;
+
+  if (e.key === "Escape") {
+    closeViewer();
+  }
+
+  if (e.key === "ArrowRight") {
+    navigate(1);
+  }
+
+  if (e.key === "ArrowLeft") {
+    navigate(-1);
+  }
+
 });
 
-// Touch / swipe (mobile)
-let touchStartX = 0;
-let touchStartY = 0;
+
+// ── Swipe real mobile ──────────────────────────────────
+let startX = 0;
+
+let currentTranslate = 0;
+
+let isDragging = false;
+
 
 viewer.addEventListener("touchstart", (e) => {
-  touchStartX = e.touches[0].clientX;
-  touchStartY = e.touches[0].clientY;
+
+  if (isAnimating) return;
+
+  startX =
+    e.touches[0].clientX;
+
+  isDragging = true;
+
+  track.style.transition =
+    "none";
+
 }, { passive: true });
 
-viewer.addEventListener("touchend", (e) => {
-  const dx = e.changedTouches[0].clientX - touchStartX;
-  const dy = e.changedTouches[0].clientY - touchStartY;
-  // Só navega se o swipe for predominantemente horizontal
-  if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
-    navigate(dx < 0 ? 1 : -1);
+
+viewer.addEventListener("touchmove", (e) => {
+
+  if (!isDragging) return;
+
+  const dx =
+    e.touches[0].clientX - startX;
+
+  currentTranslate = dx;
+
+  track.style.transform =
+    `translateX(calc(-100% + ${dx}px))`;
+
+}, { passive: true });
+
+
+viewer.addEventListener("touchend", () => {
+
+  if (!isDragging) return;
+
+  isDragging = false;
+
+  const threshold = 80;
+
+  track.style.transition =
+    "transform 0.28s ease";
+
+
+  // Próxima
+  if (currentTranslate < -threshold) {
+
+    track.style.transform =
+      "translateX(-200%)";
+
+    setTimeout(() => {
+
+      currentIndex =
+        (currentIndex + 1) %
+        shuffledImages.length;
+
+      updateViewer();
+
+      track.style.transition =
+        "none";
+
+      track.style.transform =
+        "translateX(-100%)";
+
+    }, 280);
+
   }
+
+  // Anterior
+  else if (currentTranslate > threshold) {
+
+    track.style.transform =
+      "translateX(0%)";
+
+    setTimeout(() => {
+
+      currentIndex =
+        (currentIndex - 1 + shuffledImages.length) %
+        shuffledImages.length;
+
+      updateViewer();
+
+      track.style.transition =
+        "none";
+
+      track.style.transform =
+        "translateX(-100%)";
+
+    }, 280);
+
+  }
+
+  // Volta ao centro
+  else {
+
+    track.style.transform =
+      "translateX(-100%)";
+
+  }
+
+  currentTranslate = 0;
+
 }, { passive: true });
