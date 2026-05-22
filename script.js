@@ -418,7 +418,7 @@ function openViewer(index) {
   track.style.transition = "none";
 
   track.style.transform =
-    "translateX(-100%)";
+    "translateX(-33.3333%)";
 
   viewer.classList.add("active");
 
@@ -468,7 +468,7 @@ function navigate(dir) {
   if (dir > 0) {
 
     track.style.transform =
-      "translateX(-200%)";
+      "translateX(-66.6666%)";
 
     setTimeout(() => {
 
@@ -482,7 +482,7 @@ function navigate(dir) {
         "none";
 
       track.style.transform =
-        "translateX(-100%)";
+        "translateX(-33.3333%)";
 
       isAnimating = false;
 
@@ -508,7 +508,7 @@ function navigate(dir) {
         "none";
 
       track.style.transform =
-        "translateX(-100%)";
+        "translateX(-33.3333%)";
 
       isAnimating = false;
 
