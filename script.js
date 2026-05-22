@@ -621,7 +621,7 @@ viewer.addEventListener("touchmove", (e) => {
   currentTranslate = dx;
 
   track.style.transform =
-    `translateX(calc(-100% + ${dx}px))`;
+    `translateX(calc(-33.3333% + ${dx}px))`;
 
 }, { passive: true });
 
@@ -642,7 +642,7 @@ viewer.addEventListener("touchend", () => {
   if (currentTranslate < -threshold) {
 
     track.style.transform =
-      "translateX(-200%)";
+      "translateX(-66.6666%)";
 
     setTimeout(() => {
 
@@ -656,7 +656,7 @@ viewer.addEventListener("touchend", () => {
         "none";
 
       track.style.transform =
-        "translateX(-100%)";
+        "translateX(-33.3333%)";
 
     }, 280);
 
@@ -680,7 +680,7 @@ viewer.addEventListener("touchend", () => {
         "none";
 
       track.style.transform =
-        "translateX(-100%)";
+        "translateX(-33.3333%)";
 
     }, 280);
 
@@ -690,7 +690,7 @@ viewer.addEventListener("touchend", () => {
   else {
 
     track.style.transform =
-      "translateX(-100%)";
+      "translateX(-33.3333%)";
 
   }
 
