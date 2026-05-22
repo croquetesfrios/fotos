@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 * {
-  outline: red solid 1px;
+  outline: red solid 0px;
 }
 
 body {
