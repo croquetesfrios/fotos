@@ -137,9 +137,12 @@ footer {
     0
     env(safe-area-inset-bottom);
 }
+
 .viewer-track {
   display: flex;
   width: 300%;
+  height: calc(100vh - 140px);
+  align-items: center;
   transform: translateX(-100%);
   will-change: transform;
   touch-action: pan-y;
@@ -147,8 +150,8 @@ footer {
 
 .viewer-slide {
   width: calc(100% / 3);
+  height: 100%;
   flex-shrink: 0;
-  height: calc(100vh - 140px);
   object-fit: contain;
   user-select: none;
   -webkit-user-drag: none;
@@ -238,13 +241,15 @@ footer {
     width: 100%;
     padding: 80px 16px;
   }
-   .viewer-slide {
-    width: calc(100% / 3);
-    height:
-      calc(100vh - 120px);
-    padding: 0px 8px;
-    box-sizing: border-box;
+
+  .viewer-track {
+    height: calc(100vh - 120px);
   }
+  
+   .viewer-slide {
+    height: 100%;
+  }
+  
   .viewer-nav {
     position: fixed;
     top: auto;
