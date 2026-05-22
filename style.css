@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 * {
-  outline: blue solid 1px;
+  outline: pink solid 1px;
 }
 
 body {
@@ -133,7 +133,7 @@ footer {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 60px 0 40px;
+  padding: 60px 50px 40px;
 }
 
 .viewer-stage {
@@ -146,7 +146,7 @@ footer {
 .viewer-track {
   display: flex;
   width: 300%;
-  height: 90%;
+  height: 100%;
   transform: translateX(-33.3333%);
   will-change: transform;
   touch-action: pan-y;
