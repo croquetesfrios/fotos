@@ -1,6 +1,5 @@
 const images = [
   
-  // 25 Abril - 2026
   {
   thumb: "img/thumb/thumb_01.jpg",
   full: "img/full/img_01.jpg",
@@ -281,24 +280,88 @@ const images = [
   {
   thumb: "img/thumb/thumb_56.jpg",
   full: "img/full/img_56.jpg",
-  title: "25 Abril, Chapitô - 2026"
+  title: "Mostra Técnica, Chapitô - 2026"
   },
   {
   thumb: "img/thumb/thumb_57.jpg",
   full: "img/full/img_57.jpg",
-  title: "25 Abril, Chapitô - 2026"
+  title: "Mostra Técnica, Chapitô - 2026"
   },
   {
   thumb: "img/thumb/thumb_58.jpg",
   full: "img/full/img_58.jpg",
-  title: "25 Abril, Chapitô - 2026"
+  title: "Mostra Técnica, Chapitô - 2026"
   },
   {
   thumb: "img/thumb/thumb_59.jpg",
   full: "img/full/img_59.jpg",
-  title: "25 Abril, Chapitô - 2026"
+  title: "Mostra Técnica, Chapitô - 2026"
   },
-
+  {
+  thumb: "img/thumb/thumb_60.jpg",
+  full: "img/full/img_60.jpg",
+  title: "Mostra Técnica, Chapitô - 2026"
+  },
+  {
+  thumb: "img/thumb/thumb_61.jpg",
+  full: "img/full/img_61.jpg",
+  title: "Mostra Técnica, Chapitô - 2026"
+  },
+  {
+  thumb: "img/thumb/thumb_62.jpg",
+  full: "img/full/img_62.jpg",
+  title: "Mostra Técnica, Chapitô - 2026"
+  },
+  {
+  thumb: "img/thumb/thumb_63.jpg",
+  full: "img/full/img_63.jpg",
+  title: "Mostra Técnica, Chapitô - 2026"
+  },
+  {
+  thumb: "img/thumb/thumb_64.jpg",
+  full: "img/full/img_64.jpg",
+  title: "Mostra Técnica, Chapitô - 2026"
+  },
+  {
+  thumb: "img/thumb/thumb_65.jpg",
+  full: "img/full/img_65.jpg",
+  title: "Mostra Técnica, Chapitô - 2026"
+  },
+  {
+  thumb: "img/thumb/thumb_66.jpg",
+  full: "img/full/img_66.jpg",
+  title: "Mostra Técnica, Chapitô - 2026"
+  },
+  {
+  thumb: "img/thumb/thumb_67.jpg",
+  full: "img/full/img_67.jpg",
+  title: "Mostra Técnica, Chapitô - 2026"
+  },
+  {
+  thumb: "img/thumb/thumb_68.jpg",
+  full: "img/full/img_68.jpg",
+  title: "Mostra Técnica, Chapitô - 2026"
+  },
+  {
+  thumb: "img/thumb/thumb_69.jpg",
+  full: "img/full/img_69.jpg",
+  title: "Mostra Técnica, Chapitô - 2026"
+  },
+  {
+  thumb: "img/thumb/thumb_70.jpg",
+  full: "img/full/img_70.jpg",
+  title: "Mostra Técnica, Chapitô - 2026"
+  },
+  {
+  thumb: "img/thumb/thumb_71.jpg",
+  full: "img/full/img_71.jpg",
+  title: "Mostra Técnica, Chapitô - 2026"
+  },
+  {
+  thumb: "img/thumb/thumb_72.jpg",
+  full: "img/full/img_72.jpg",
+  title: "Mostra Técnica, Chapitô - 2026"
+  },
 ];
 
 // 🔀 Fisher-Yates shuffle
