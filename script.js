@@ -1,367 +1,483 @@
 const images = [
   
   {
-  thumb: "img/thumb/thumb_01.jpg",
-  full: "img/full/img_01.jpg",
+  thumb: "img/thumb/thumb_001.jpg",
+  full: "img/full/img_001.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_02.jpg",
-  full: "img/full/img_02.jpg",
+  thumb: "img/thumb/thumb_002.jpg",
+  full: "img/full/img_002.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_03.jpg",
-  full: "img/full/img_03.jpg",
+  thumb: "img/thumb/thumb_003.jpg",
+  full: "img/full/img_003.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_04.jpg",
-  full: "img/full/img_04.jpg",
+  thumb: "img/thumb/thumb_004.jpg",
+  full: "img/full/img_004.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_05.jpg",
-  full: "img/full/img_05.jpg",
+  thumb: "img/thumb/thumb_005.jpg",
+  full: "img/full/img_005.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_06.jpg",
-  full: "img/full/img_06.jpg",
+  thumb: "img/thumb/thumb_006.jpg",
+  full: "img/full/img_006.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_07.jpg",
-  full: "img/full/img_07.jpg",
+  thumb: "img/thumb/thumb_007.jpg",
+  full: "img/full/img_007.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_08.jpg",
-  full: "img/full/img_08.jpg",
+  thumb: "img/thumb/thumb_008.jpg",
+  full: "img/full/img_008.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_09.jpg",
-  full: "img/full/img_09.jpg",
+  thumb: "img/thumb/thumb_009.jpg",
+  full: "img/full/img_009.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_10.jpg",
-  full: "img/full/img_10.jpg",
+  thumb: "img/thumb/thumb_010.jpg",
+  full: "img/full/img_010.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_11.jpg",
-  full: "img/full/img_11.jpg",
+  thumb: "img/thumb/thumb_011.jpg",
+  full: "img/full/img_011.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_12.jpg",
-  full: "img/full/img_12.jpg",
+  thumb: "img/thumb/thumb_012.jpg",
+  full: "img/full/img_012.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_13.jpg",
-  full: "img/full/img_13.jpg",
+  thumb: "img/thumb/thumb_013.jpg",
+  full: "img/full/img_013.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_14.jpg",
-  full: "img/full/img_14.jpg",
+  thumb: "img/thumb/thumb_014.jpg",
+  full: "img/full/img_014.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_15.jpg",
-  full: "img/full/img_15.jpg",
+  thumb: "img/thumb/thumb_015.jpg",
+  full: "img/full/img_015.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_16.jpg",
-  full: "img/full/img_16.jpg",
+  thumb: "img/thumb/thumb_016.jpg",
+  full: "img/full/img_016.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_17.jpg",
-  full: "img/full/img_17.jpg",
+  thumb: "img/thumb/thumb_017.jpg",
+  full: "img/full/img_017.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_18.jpg",
-  full: "img/full/img_18.jpg",
+  thumb: "img/thumb/thumb_018.jpg",
+  full: "img/full/img_018.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_19.jpg",
-  full: "img/full/img_19.jpg",
+  thumb: "img/thumb/thumb_019.jpg",
+  full: "img/full/img_019.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_20.jpg",
-  full: "img/full/img_20.jpg",
+  thumb: "img/thumb/thumb_020.jpg",
+  full: "img/full/img_020.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_21.jpg",
-  full: "img/full/img_21.jpg",
+  thumb: "img/thumb/thumb_021.jpg",
+  full: "img/full/img_021.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_22.jpg",
-  full: "img/full/img_22.jpg",
+  thumb: "img/thumb/thumb_022.jpg",
+  full: "img/full/img_022.jpg",
   title: "Cabaret, Chapitô - 2026"
   },
 
   {
-  thumb: "img/thumb/thumb_23.jpg",
-  full: "img/full/img_23.jpg",
+  thumb: "img/thumb/thumb_023.jpg",
+  full: "img/full/img_023.jpg",
   title: "DMT, Chapitô - 2026"
   },
     {
-  thumb: "img/thumb/thumb_24.jpg",
-  full: "img/full/img_24.jpg",
+  thumb: "img/thumb/thumb_024.jpg",
+  full: "img/full/img_024.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_25.jpg",
-  full: "img/full/img_25.jpg",
+  thumb: "img/thumb/thumb_025.jpg",
+  full: "img/full/img_025.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_26.jpg",
-  full: "img/full/img_26.jpg",
+  thumb: "img/thumb/thumb_026.jpg",
+  full: "img/full/img_026.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_27.jpg",
-  full: "img/full/img_27.jpg",
+  thumb: "img/thumb/thumb_027.jpg",
+  full: "img/full/img_027.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_28.jpg",
-  full: "img/full/img_28.jpg",
+  thumb: "img/thumb/thumb_028.jpg",
+  full: "img/full/img_028.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_29.jpg",
-  full: "img/full/img_29.jpg",
+  thumb: "img/thumb/thumb_029.jpg",
+  full: "img/full/img_029.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_30.jpg",
-  full: "img/full/img_30.jpg",
+  thumb: "img/thumb/thumb_030.jpg",
+  full: "img/full/img_030.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_31.jpg",
-  full: "img/full/img_31.jpg",
+  thumb: "img/thumb/thumb_031.jpg",
+  full: "img/full/img_031.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_32.jpg",
-  full: "img/full/img_32.jpg",
+  thumb: "img/thumb/thumb_032.jpg",
+  full: "img/full/img_032.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_33.jpg",
-  full: "img/full/img_33.jpg",
+  thumb: "img/thumb/thumb_033.jpg",
+  full: "img/full/img_033.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_34.jpg",
-  full: "img/full/img_34.jpg",
+  thumb: "img/thumb/thumb_034.jpg",
+  full: "img/full/img_034.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_35.jpg",
-  full: "img/full/img_35.jpg",
+  thumb: "img/thumb/thumb_035.jpg",
+  full: "img/full/img_035.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_36.jpg",
-  full: "img/full/img_36.jpg",
+  thumb: "img/thumb/thumb_036.jpg",
+  full: "img/full/img_036.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_37.jpg",
-  full: "img/full/img_37.jpg",
+  thumb: "img/thumb/thumb_037.jpg",
+  full: "img/full/img_037.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_38.jpg",
-  full: "img/full/img_38.jpg",
+  thumb: "img/thumb/thumb_038.jpg",
+  full: "img/full/img_038.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_39.jpg",
-  full: "img/full/img_39.jpg",
+  thumb: "img/thumb/thumb_039.jpg",
+  full: "img/full/img_039.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_40.jpg",
-  full: "img/full/img_40.jpg",
+  thumb: "img/thumb/thumb_040.jpg",
+  full: "img/full/img_040.jpg",
   title: "DMT, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_41.jpg",
-  full: "img/full/img_41.jpg",
+  thumb: "img/thumb/thumb_041.jpg",
+  full: "img/full/img_041.jpg",
   title: "DMT, Chapitô - 2026"
   },
 
   {
-  thumb: "img/thumb/thumb_42.jpg",
-  full: "img/full/img_42.jpg",
+  thumb: "img/thumb/thumb_042.jpg",
+  full: "img/full/img_042.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_43.jpg",
-  full: "img/full/img_43.jpg",
+  thumb: "img/thumb/thumb_043.jpg",
+  full: "img/full/img_043.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_44.jpg",
-  full: "img/full/img_44.jpg",
+  thumb: "img/thumb/thumb_044.jpg",
+  full: "img/full/img_044.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_45.jpg",
-  full: "img/full/img_45.jpg",
+  thumb: "img/thumb/thumb_045.jpg",
+  full: "img/full/img_045.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_46.jpg",
-  full: "img/full/img_46.jpg",
+  thumb: "img/thumb/thumb_046.jpg",
+  full: "img/full/img_046.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_47.jpg",
-  full: "img/full/img_47.jpg",
+  thumb: "img/thumb/thumb_047.jpg",
+  full: "img/full/img_047.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_48.jpg",
-  full: "img/full/img_48.jpg",
+  thumb: "img/thumb/thumb_048.jpg",
+  full: "img/full/img_048.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_49.jpg",
-  full: "img/full/img_49.jpg",
+  thumb: "img/thumb/thumb_049.jpg",
+  full: "img/full/img_049.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_50.jpg",
-  full: "img/full/img_50.jpg",
+  thumb: "img/thumb/thumb_050.jpg",
+  full: "img/full/img_050.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_51.jpg",
-  full: "img/full/img_51.jpg",
+  thumb: "img/thumb/thumb_051.jpg",
+  full: "img/full/img_051.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_52.jpg",
-  full: "img/full/img_52.jpg",
+  thumb: "img/thumb/thumb_052.jpg",
+  full: "img/full/img_052.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_53.jpg",
-  full: "img/full/img_53.jpg",
+  thumb: "img/thumb/thumb_053.jpg",
+  full: "img/full/img_053.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_54.jpg",
-  full: "img/full/img_54.jpg",
+  thumb: "img/thumb/thumb_054.jpg",
+  full: "img/full/img_054.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_55.jpg",
-  full: "img/full/img_55.jpg",
+  thumb: "img/thumb/thumb_055.jpg",
+  full: "img/full/img_055.jpg",
   title: "25 Abril, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_56.jpg",
-  full: "img/full/img_56.jpg",
+  thumb: "img/thumb/thumb_056.jpg",
+  full: "img/full/img_056.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_57.jpg",
-  full: "img/full/img_57.jpg",
+  thumb: "img/thumb/thumb_057.jpg",
+  full: "img/full/img_057.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_58.jpg",
-  full: "img/full/img_58.jpg",
+  thumb: "img/thumb/thumb_058.jpg",
+  full: "img/full/img_058.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_59.jpg",
-  full: "img/full/img_59.jpg",
+  thumb: "img/thumb/thumb_059.jpg",
+  full: "img/full/img_059.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_60.jpg",
-  full: "img/full/img_60.jpg",
+  thumb: "img/thumb/thumb_060.jpg",
+  full: "img/full/img_060.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_61.jpg",
-  full: "img/full/img_61.jpg",
+  thumb: "img/thumb/thumb_061.jpg",
+  full: "img/full/img_061.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_62.jpg",
-  full: "img/full/img_62.jpg",
+  thumb: "img/thumb/thumb_062.jpg",
+  full: "img/full/img_062.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_63.jpg",
-  full: "img/full/img_63.jpg",
+  thumb: "img/thumb/thumb_063.jpg",
+  full: "img/full/img_063.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_64.jpg",
-  full: "img/full/img_64.jpg",
+  thumb: "img/thumb/thumb_064.jpg",
+  full: "img/full/img_064.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_65.jpg",
-  full: "img/full/img_65.jpg",
+  thumb: "img/thumb/thumb_065.jpg",
+  full: "img/full/img_065.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_66.jpg",
-  full: "img/full/img_66.jpg",
+  thumb: "img/thumb/thumb_066.jpg",
+  full: "img/full/img_066.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_67.jpg",
-  full: "img/full/img_67.jpg",
+  thumb: "img/thumb/thumb_067.jpg",
+  full: "img/full/img_067.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_68.jpg",
-  full: "img/full/img_68.jpg",
+  thumb: "img/thumb/thumb_068.jpg",
+  full: "img/full/img_068.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_69.jpg",
-  full: "img/full/img_69.jpg",
+  thumb: "img/thumb/thumb_069.jpg",
+  full: "img/full/img_069.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_70.jpg",
-  full: "img/full/img_70.jpg",
+  thumb: "img/thumb/thumb_070.jpg",
+  full: "img/full/img_070.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_71.jpg",
-  full: "img/full/img_71.jpg",
+  thumb: "img/thumb/thumb_071.jpg",
+  full: "img/full/img_071.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
   {
-  thumb: "img/thumb/thumb_72.jpg",
-  full: "img/full/img_72.jpg",
+  thumb: "img/thumb/thumb_072.jpg",
+  full: "img/full/img_072.jpg",
   title: "Mostra Técnica, Chapitô - 2026"
   },
+  {
+  thumb: "img/thumb/thumb_073.jpg",
+  full: "img/full/img_073.jpg",
+  title: "Copenhagen, Dinamarca - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_074.jpg",
+  full: "img/full/img_074.jpg",
+  title: "Copenhagen, Dinamarca - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_075.jpg",
+  full: "img/full/img_075.jpg",
+  title: "Copenhagen, Dinamarca - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_076.jpg",
+  full: "img/full/img_076.jpg",
+  title: "Copenhagen, Dinamarca - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_077.jpg",
+  full: "img/full/img_077.jpg",
+  title: "Copenhagen, Dinamarca - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_078.jpg",
+  full: "img/full/img_078.jpg",
+  title: "Copenhagen, Dinamarca - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_079.jpg",
+  full: "img/full/img_079.jpg",
+  title: "Copenhagen, Dinamarca - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_080.jpg",
+  full: "img/full/img_080.jpg",
+  title: "Copenhagen, Dinamarca - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_081.jpg",
+  full: "img/full/img_081.jpg",
+  title: "Stavanger, Noruega - 2024"
+  },
+   {
+  thumb: "img/thumb/thumb_082.jpg",
+  full: "img/full/img_082.jpg",
+  title: "Stavanger, Noruega - 2024"
+  },
+   {
+  thumb: "img/thumb/thumb_083.jpg",
+  full: "img/full/img_083.jpg",
+  title: "Stavanger, Noruega - 2024"
+  },
+   {
+  thumb: "img/thumb/thumb_084.jpg",
+  full: "img/full/img_084.jpg",
+  title: "Stavanger, Noruega - 2024"
+  },
+   {
+  thumb: "img/thumb/thumb_085.jpg",
+  full: "img/full/img_085.jpg",
+  title: "Stavanger, Noruega - 2024"
+  },
+   {
+  thumb: "img/thumb/thumb_086.jpg",
+  full: "img/full/img_086.jpg",
+  title: "Stavanger, Noruega - 2024"
+  },
+   {
+  thumb: "img/thumb/thumb_087.jpg",
+  full: "img/full/img_087.jpg",
+  title: "Stavanger, Noruega - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_088.jpg",
+  full: "img/full/img_088.jpg",
+  title: "Eidfjord, Noruega - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_089.jpg",
+  full: "img/full/img_089.jpg",
+  title: "Eidfjord, Noruega - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_090.jpg",
+  full: "img/full/img_090.jpg",
+  title: "Eidfjord, Noruega - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_091.jpg",
+  full: "img/full/img_091.jpg",
+  title: "Eidfjord, Noruega - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_092.jpg",
+  full: "img/full/img_092.jpg",
+  title: "Eidfjord, Noruega - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_093.jpg",
+  full: "img/full/img_093.jpg",
+  title: "Eidfjord, Noruega - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_094.jpg",
+  full: "img/full/img_094.jpg",
+  title: "Eidfjord, Noruega - 2024"
+  },
+  {
+  thumb: "img/thumb/thumb_095.jpg",
+  full: "img/full/img_095.jpg",
+  title: "Eidfjord, Noruega - 2024"
+  },
+  
 ];
 
 // 🔀 Fisher-Yates shuffle
