@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotos - 25 de Abril</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+  <nav class="breadcrumb">
+    <a href="index.html#eventosGrid">← voltar</a>
+  </nav>
+
+  <h1 class="title">25 de Abril, Chapitô — 2026</h1>
+
+  <div class="gallery" id="gallery"></div>
+
+  <nav class="breadcrumb">
+    <a href="index.html#eventosGrid">← voltar</a>
+  </nav>
+
+
+</main>
+
+<!-- ── Viewer fullscreen ─────────────────────────────── -->
+<div id="viewer" class="viewer" aria-hidden="true" role="dialog" aria-modal="true">
+
+  <button class="viewer-close" id="viewerClose" aria-label="Fechar">&#10005;</button>
+
+  <button class="viewer-nav viewer-prev" id="viewerPrev" aria-label="Imagem anterior">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+
+  <div id="viewerInner" class="viewer-inner">
+    <div class="viewer-stage">  
+      <div class="viewer-track" id="viewerTrack">
+        <img class="viewer-slide" id="prevImg" src="" draggable="false">
+        <img class="viewer-slide" id="currentImg" src="" draggable="false">
+        <img class="viewer-slide" id="nextImg" src="" draggable="false">
+      </div>
+    </div>
+    <div class="viewer-meta">
+      <span id="viewerTitle" class="viewer-title"></span>
+      <span id="viewerCounter" class="viewer-counter"></span>
+    </div>
+  </div>
+
+  <button class="viewer-nav viewer-next" id="viewerNext" aria-label="Próxima imagem">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+
+</div>
+
+  
+<footer>
+  <p>&copy; Todos os direitos reservados.</p>
+</footer>
+
+<script src="data/25abril-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

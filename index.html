@@ -9,7 +9,80 @@
 <body>
 
 <main>
+      <h1 class="title">fotos</h1>
+
   <div class="gallery" id="gallery"></div>
+
+  <div class="ver-mais-wrap"> 
+    <hr style="border: none; border-top: 1px solid rgba(0, 0, 0, 0.5); width: 80%; margin-bottom: 30px;">
+    <h1 class="title">albuns</h1>
+  </div>
+
+    <div class="eventos-grid" id="eventosGrid">
+
+    <a href="cabaret.html" class="evento-card">
+      <div class="evento-thumb">
+        <img src="img/2026cabaret/thumbs/thumb_06.jpg" alt="Cabaret, Chapitô">
+      </div>
+      <div class="evento-info">
+        <span class="evento-nome">Cabaret</span>
+        <span class="evento-detalhe">Chapitô · 2026 · 22 fotos</span>
+      </div>
+    </a>
+
+    <a href="dmt.html" class="evento-card">
+      <div class="evento-thumb">
+        <img src="img/2026DMT/thumbs/thumb_07.jpg" alt="Dia Mundial do Teatro, Chapitô">
+      </div>
+      <div class="evento-info">
+        <span class="evento-nome">Dia Mundial do Teatro</span>
+        <span class="evento-detalhe">Chapitô · 2026 · 19 fotos</span>
+      </div>
+    </a>
+
+    <a href="mostra-tecnica.html" class="evento-card">
+      <div class="evento-thumb">
+        <img src="img/2026mostra/thumbs/thumb_13.jpg" alt="Mostra Técnica, Chapitô">
+      </div>
+      <div class="evento-info">
+        <span class="evento-nome">Mostra Técnica</span>
+        <span class="evento-detalhe">Chapitô · 2026 · 18 fotos</span>
+      </div>
+    </a>
+
+    <a href="25abril.html" class="evento-card">
+      <div class="evento-thumb">
+        <img src="img/202625abril/thumbs/thumb_07.jpg" alt="25 de Abril, Chapitô">
+      </div>
+      <div class="evento-info">
+        <span class="evento-nome">25 de Abril</span>
+        <span class="evento-detalhe">Chapitô · 2026 · 13 fotos</span>
+      </div>
+    </a>
+
+    <a href="murmurios.html" class="evento-card">
+      <div class="evento-thumb">
+        <img src="img/2026murmurios/thumbs/thumb_01.jpg" alt="Murmúrios, Chapitô">
+      </div>
+      <div class="evento-info">
+        <span class="evento-nome">Murmúrios</span>
+        <span class="evento-detalhe">Chapitô · 2026 · 80 fotos</span>
+      </div>
+    </a>
+
+    <a href="frio.html" class="evento-card">
+      <div class="evento-thumb">
+        <img src="img/2024frio/thumbs/thumb_02.jpg" alt="Frio, Norte Europa">
+      </div>
+      <div class="evento-info">
+        <span class="evento-nome">Frio</span>
+        <span class="evento-detalhe">Norte Europa · 2024 · 23 fotos</span>
+      </div>
+    </a>
+
+  </div>
+
+
 </main>
 
 <!-- ── Viewer fullscreen ─────────────────────────────── -->
@@ -22,7 +95,6 @@
   </button>
 
   <div id="viewerInner" class="viewer-inner">
-    
     <div class="viewer-stage">  
       <div class="viewer-track" id="viewerTrack">
         <img class="viewer-slide" id="prevImg" src="" draggable="false">
@@ -30,12 +102,10 @@
         <img class="viewer-slide" id="nextImg" src="" draggable="false">
       </div>
     </div>
-    
     <div class="viewer-meta">
       <span id="viewerTitle" class="viewer-title"></span>
       <span id="viewerCounter" class="viewer-counter"></span>
     </div>
-    
   </div>
 
   <button class="viewer-nav viewer-next" id="viewerNext" aria-label="Próxima imagem">
@@ -48,6 +118,7 @@
   <p>&copy; Todos os direitos reservados.</p>
 </footer>
 
+<script src="data/destaques-data.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

@@ -288,3 +288,140 @@ footer {
     font-size: 0.70rem;
   }
 }
+
+
+/* ══════════════════════════════════════════════════════════
+   BOTÃO VER MAIS
+   ══════════════════════════════════════════════════════════ */
+
+.ver-mais-wrap {
+  text-align: center;
+  padding: 48px 0 24px;
+}
+
+.btn-ver-mais {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.55);
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-ver-mais:hover {
+  color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(0, 0, 0, 0.7);
+}
+
+.title {
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 24px;
+}
+
+/* ══════════════════════════════════════════════════════════
+   BREADCRUMB (voltar / eventos)
+   ══════════════════════════════════════════════════════════ */
+
+.breadcrumb {
+  padding: 24px 0 20px;
+}
+
+.breadcrumb a {
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   GRID DE EVENTOS
+   ══════════════════════════════════════════════════════════ */
+
+.eventos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-bottom: 48px;
+}
+
+.evento-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.evento-thumb {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
+.evento-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.evento-card:hover .evento-thumb img {
+  transform: scale(1.03);
+}
+
+.evento-info {
+  padding: 10px 0 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.evento-nome {
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.evento-detalhe {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* ── Responsivo eventos ────────────────────────────────── */
+@media (max-width: 1324px) {
+  .eventos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .eventos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .evento-nome {
+    font-size: 0.75rem;
+  }
+  .evento-detalhe {
+    font-size: 0.68rem;
+  }
+}
